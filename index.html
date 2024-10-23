@@ -2,15 +2,13 @@
 <html lang="en">
   <head>
     <script>
-      // Function to redirect after 5 seconds
       function redirectAfterDelay() {
         const url = "https://youtube.com/playlist?list=PLlcmNU-jCJ6OCQc2UnR8oChy79nIWzyeo" // Specify the URL to redirect to
         setTimeout(function () {
           window.location.replace = url // Redirect to the URL
         }, 3000) // 3000 milliseconds = 3 seconds
       }
-
-      // Execute the function when the page is loaded
+  
       window.onload = redirectAfterDelay
     </script>
   </head>
