@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script>        // Function to redirect after 5 seconds
-        function redirectAfterDelay() {
-            // URL to redirect to
-            const url = 'https://youtube.com/playlist?list=PLlcmNU-jCJ6OCQc2UnR8oChy79nIWzyeo'; // Change this to your target URL
-            
-            // Redirect after 5 seconds (5000 milliseconds)
-            setTimeout(() => {
-                window.location.replace = url;
-            }, 5000);
-        }
+  <head>
+    <script>
+      // Function to redirect after 5 seconds
+      function redirectAfterDelay() {
+        const url = "https://youtube.com/playlist?list=PLlcmNU-jCJ6OCQc2UnR8oChy79nIWzyeo" // Specify the URL to redirect to
+        setTimeout(function () {
+          window.location.replace = url // Redirect to the URL
+        }, 3000) // 3000 milliseconds = 3 seconds
+      }
 
-        // Execute the function when the page loads
-        window.onload = redirectAfterDelay;</script></head>
+      // Execute the function when the page is loaded
+      window.onload = redirectAfterDelay
+    </script>
+  </head>
   <body>
-  <p>Thank you for scanning the jacket! You will be redirected to a cool site shortly.</p>
-</body>
+    <p>
+      Thank you for scanning the jacket! You will be redirected to a cool site shortly.
+    </p>
+  </body>
 </html>
