@@ -5,7 +5,7 @@
       function redirectAfterDelay() {
         const url = "https://youtube.com/playlist?list=PLlcmNU-jCJ6OCQc2UnR8oChy79nIWzyeo" // Specify the URL to redirect to
         setTimeout(function () {
-          window.location.replace = url // Redirect to the URL
+          window.location.replace(url) // Redirect to the URL
         }, 3000) // 3000 milliseconds = 3 seconds
       }
   
